@@ -4,16 +4,16 @@ let arr = [12, 4, 53, 23, 57, 456, 4523, 647, 53, 5, 4, 4,55, 53];
 function largestNumber() {
     return Math.max(...arr);
 }
-console.log(largestNumber())
+console.log(largestNumber());
 
 
 
 // 02  Write a function to find the smallest number in an array..............
 
 function smallestNumber() {
-    return Math.min(...arr)
+    return Math.min(...arr);
 }
-console.log(smallestNumber())
+console.log(smallestNumber());
 
 
 
@@ -22,9 +22,9 @@ console.log(smallestNumber())
  // 03   Write a function to remove duplicates from an array.....................
 
 function removeDublicate() {
-    return arr.filter((ind, num) => arr.indexOf(ind) === num)
+    return arr.filter((ind, num) => arr.indexOf(ind) === num);
 }
-console.log(removeDublicate())
+console.log(removeDublicate());
 
 
 
@@ -37,7 +37,8 @@ function isPrime(num) {
         if (num % i == 0) {
             return false
         }
-    } return true
+    }
+    return true
 }
 console.log(array1.filter(isPrime));
 
@@ -50,7 +51,7 @@ let fullName = 'Lucky';
 function reverseStr() {
     let splarr = fullName.split('');
     let revarr = splarr.reverse();
-    let joinarr = revarr.join('')
+    let joinarr = revarr.join('');
     return joinarr;
 }
 console.log(reverseStr());
@@ -80,7 +81,7 @@ revstr();
 let a = 'lucky';
 let b = 'ckluy';
 
-function anagramFunc() {
+function anagramFunc(a,b) {
     let al = a.length;
     let bl = b.length;
 
@@ -99,7 +100,7 @@ function anagramFunc() {
     }
 
 }
-anagramFunc()
+anagramFunc(a,b)
 
 
 
@@ -109,7 +110,7 @@ anagramFunc()
 let fact = 3;
 let result = 1;
 
-function factorial00() {
+function factorial00(fact,result) {
     if (fact == 0 || fact == 1) {
         return 1;
     } else if (fact > 1) {
@@ -119,7 +120,7 @@ function factorial00() {
         return result;
     }
 }
-console.log(factorial00())
+console.log(factorial00(fact,result))
 
 
 
@@ -128,12 +129,12 @@ console.log(factorial00())
 let sumarr = [1, 2, 3, 4, 5, 6]; // 21
 let sumOfArr = 0;
 
-function sum() {
+function sum(sumarr,sumOfArr) {
     for (let i = 0; i < sumarr.length; i++) {
         sumOfArr += sumarr[i];
     } return sumOfArr;
 }
-console.log(sum())
+console.log(sum(sumarr,sumOfArr))
 
 
 
